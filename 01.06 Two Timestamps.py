@@ -1,5 +1,5 @@
-print("First Time Stamp")
-a = int(input("Enter Hours: "))
+print("First Time Stamp")a = int(input("Enter Hours: "))
+
 b = int(input("Enter Minutes: "))
 c = int(input("Enter Seconds: "))
 print("Second Time Stamp")
