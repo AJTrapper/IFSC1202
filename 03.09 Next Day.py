@@ -5,18 +5,22 @@ y = int(input("Day of Month : "))
 
 if x == 4 or x == 6 or x == 9 or x == 11:
     if y != 30:
-        print((x) (y+1))
+        print("{}/{}".format(x, y+1))
     else:
-        print("1")
+        print("{}/{}".format(x+1,"1"))
 
 elif x == 1 or x == 3 or x == 5 or x == 7 or x == 8 or x == 10:
     if y != 31:
-        print(y+1)
+        print("{}/{}".format(x, y+1))
     else:
-        print("1")
-    
+        print("{}/{}".format(x+1,"1"))
+elif x == 12:
+    if y != 31:
+        print("{}/{}".format(x, y+1))
+    else:
+        print("1/1")
 else :
     if y != 28:
-        print(y+1)
+        print("{}/{}".format(x, y+1))
     else:
-        print("1")
+        print("{}/{}".format(x+1,"1"))
