@@ -1,17 +1,7 @@
 x = int(input("Enter NUmber N :"))
-remainder = 0
-for i in range (1,x):
-    print( x%i ) 
-    if (x%i)>0:
-      remainder=remainder + 1  
-    else:
-        print()
-print("remainder {}".format(remainder))  
- 
-
-if remainder == (x-2):
-    print("Prime")
+for i in range (2,(x // 2)  + 1):
+    if (x%i)==0:
+      print("Composite")
+      break
 else:
-    print("Composite")
-print("space         Space")
-print("remainder {}".format(remainder))
+    print("Prime")
