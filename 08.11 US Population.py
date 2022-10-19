@@ -1,4 +1,5 @@
-# population list
+# population list for population
+
 population = []
 
 # open input file for reading
