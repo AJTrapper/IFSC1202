@@ -25,9 +25,11 @@ for i in range(1,n+1,2):
     for j in range(1,n+1,2):
         a[i][j] = "*"
     
+
 for i in range(2,n+1,2):
     for j in range(2,n+1,2):
         a[i][j] = "*"
+    
 
 # print the snowflake
 for i in range(len(a)):
