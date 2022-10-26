@@ -1,6 +1,6 @@
 # Input the size of the snowflake
-#n = int(input("Enter the number of rows and columns: "))
-n = 10
+n = int(input("Enter the number of rows and columns: "))
+#n = 20
 # Create the array - initialize with a space
 a = []
 for i in range(n+2):
