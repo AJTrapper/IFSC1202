@@ -6,3 +6,5 @@ a = []
 
 for i in range(0,rows-1):
     x = input("Enter a line of data: ")
+    y = x.split()
+    for y in range(len(a[]))
