@@ -8,3 +8,5 @@ for i in range(len(a)):
         print(a[i][0])
         print(a[i][1])
         print(a[i][2])
+
+
