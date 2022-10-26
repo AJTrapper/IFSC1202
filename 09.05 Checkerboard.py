@@ -1,11 +1,9 @@
-# Input the size of the snowflake
+
 n = int(input("Enter the number of rows and columns: "))
-#n = 20
-# Create the array - initialize with a space
+
 a = []
 for i in range(n+2):
     a.append([' '] * (n+2))
-# Loop through the array by column
 for i in range(1,n+1):
 # left column
 	a[i][0] = '|'
@@ -31,7 +29,6 @@ for i in range(2,n+1,2):
         a[i][j] = "*"
     
 
-# print the snowflake
 for i in range(len(a)):
     for j in range(len(a[i])):
         print(a[i][j], end=' ')
