@@ -24,7 +24,7 @@ else:
     x = (employee1.HoursWorked)* (employee1.Wage)
 employee1.WeeklyPay = x
 
-x = RetailInfo.readline()
+x = EmployeeInfo.readline()
 y = x.split(",")
 employee2 = Employee()
 employee2.Name = y[0].strip()
@@ -38,7 +38,7 @@ else:
     x = (employee2.HoursWorked)* (employee2.Wage)
 employee2.WeeklyPay = x
 
-x = RetailInfo.readline()
+x = EmployeeInfo.readline()
 y = x.split(",")
 employee3 = Employee()
 employee3.Name = y[0].strip()
