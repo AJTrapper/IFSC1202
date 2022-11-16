@@ -41,4 +41,9 @@ while x != "":
     employeeIDNumber = int(y[0])
     employeeHoursWorked = float(y[1])
     empidx = find_employee(EmployeeLists, employeeIDNumber)
-    EmployeeLists[empidx].employeeHoursWorked = employeeHoursWorked 
+    EmployeeLists[empidx].employeeHoursWorked = employeeHoursWorked
+    
+
+print("{:>10s} {:>10s} {:>10s} {:>10} {:>10s} {:>10}".format( "First", "Last", "ID", "Hours", "Houly", "Weekly"))
+print("{:>10s} {:>10s} {:>10s} {:>10} {:>10s} {:>10}".format( "Name", "Name", "Number", "Worked", "Wage", "Pay"))
+
