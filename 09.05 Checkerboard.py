@@ -1,7 +1,7 @@
 
 n = int(input("Enter the number of rows and columns: "))
+a= []
 
-a = []
 for i in range(n+2):
     a.append([' '] * (n+2))
 for i in range(1,n+1):

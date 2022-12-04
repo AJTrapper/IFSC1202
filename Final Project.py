@@ -1,34 +1,35 @@
-n = int(input("Enter the number of rows and columns: "))
+class Canvas():
 
-a = []
-for i in range(21):
-    a.append([' '] * (n+2))
-for i in range(1,n+1):
-# left column
-	a[i][0] = '|'
-# right column
-	a[i][n+1] = '|'
-##  upper row
-	a[0][i] = '-'
-# lower row	
-	a[n+1][i] = '-'
-# Corners
-a[0][0]="+"
-a[0][22] ="+"
-a[22][0]="+"
-a[22][22]="+"
+def __init__(self, size, xpos, ypos, direction, pen, canvas):
+    self.size = 20
+    self.xpos= 0 
+    self.ypos = 0
+    self.direction = "U"
+    self.pen = "U"
+    self.canvas = [0,0]
 
-for i in range(1,n+1,2):
-    for j in range(1,n+1,2):
-        a[i][j] = "*"
+def printsketch(self):
+    CanvasList = []
+    CanvasRead = open("Cshape.txt")
+    x = CanvasRead.readline()
+    while x != "":
+        y = x.split(",")
+        canvas = Canvas()
+        CanvasList.append(canvas)
+        x = CanvasRead.readline()
+    CanvasRead.close()
+
+    print(xpos, ypos, direction)
     
+def penup():
+    content 
 
-for i in range(2,n+1,2):
-    for j in range(2,n+1,2):
-        a[i][j] = "*"
-    
+def pendown():
+    content 
 
-for i in range(len(a)):
-    for j in range(len(a[i])):
-        print(a[i][j], end=' ')
-    print()
+def turnleft():
+
+def turnright():
+
+def move():
+
