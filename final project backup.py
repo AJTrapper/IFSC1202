@@ -1,18 +1,15 @@
-class Canvas():
-
-    def __init__(self, size, xpos, ypos, direction, pen, canvas):
+class Sketch():
+	def __init__(self, size):
         self.size = 0
         self.xpos= 0 
         self.ypos = 0
         self.direction = "U"
         self.pen = "U"
         self.canvas = []
-
-		for i in range(self.size):
-			self.canvas.append([' '] * self.size)
-		return
-
-    def printsketch(self):
+#		for i in range(self.size):
+#			self.canvas.append([' '] * self.size)
+#		return
+	def printsketch(self):
 		print("+" + ("-" * self.size) + "+")
 		for i in range(self.size -1, -1, -1):
 			print("|", sep="", end="")
@@ -24,9 +21,9 @@ class Canvas():
 		return
 
 	def penup(self):
-    	self.pen = "U" 
+    	self.pen = "U"
 		return
-
+	
 	def pendown(self):
 		self.pen = "D"
 		return
